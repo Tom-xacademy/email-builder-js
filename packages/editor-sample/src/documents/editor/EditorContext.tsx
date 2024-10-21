@@ -55,10 +55,6 @@ export function useInspectorDrawerOpen() {
   return editorStateStore((s) => s.inspectorDrawerOpen);
 }
 
-export function useSamplesDrawerOpen() {
-  return editorStateStore((s) => s.samplesDrawerOpen);
-}
-
 export function setSelectedBlockId(selectedBlockId: TValue['selectedBlockId']) {
   const selectedSidebarTab = selectedBlockId === null ? 'styles' : 'block-configuration';
   const options: Partial<TValue> = {};
